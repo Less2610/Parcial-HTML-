@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones - Patitas Felices</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <header class="main-header">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🐾</span>
+                <span class="logo-text"><strong>Patitas Felices</strong> <small>FUNDACIÓN RESCATE Y ADOPCIÓN</small></span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Adopta</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="donaciones.html" class="active">Contacto / Donaciones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(IMG/banner.jpeg);">   
+        <div class="banner-content">
+            <h1>Ayúdanos a cambiar vidas</h1>
+            <p>Tu aporte transforma el futuro de cientos de animales rescatados que buscan una segunda oportunidad.</p>
+        </div>
+    </section>
+
+    
+    <section class="info-section">
+        <h2 class="section-title">Nuestra Causa</h2>
+        <div class="cards-container">
+            
+            
+            <div class="card">
+                <div class="card-img" style="background-image: url(IMG/donacion.jpeg);"></div>  
+                <div class="card-body">
+                    <h3>¿Por qué donar?</h3>
+                    <p>Muchos animales llegan en estado de vulnerabilidad y enfermedad. Tu ayuda brinda atención médica inmediata, alimento y un refugio seguro.</p>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <div class="card-img" style="background-image: url(IMG/veterinario.jpeg);"></div>
+                <div class="card-body">
+                    <h3>¿Cómo usamos las donaciones?</h3>
+                    <p>El 100% de los recursos se destinan a tratamientos veterinarios, esterilizaciones, alimentación y mantenimiento de nuestras instalaciones.</p>
+                </div>
+            </div>
+
+            
+            <div class="card">
+                <div class="card-img" style="background-image: url(IMG/estadisticas.png);"></div>
+                <div class="card-body">
+                    <h3>Impacto en cifras</h3>
+                    <p>Más de 500 animales rescatados este año, 350 adopciones exitosas y jornadas masivas de esterilización en la comunidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de simulación de donación -->
+    <section class="form-section">
+        <div class="form-container">
+            <h2>Simula tu donación</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="monto">Monto de donación:</label>
+                    <input type="number" id="monto" name="monto" placeholder="Ej. 50000" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="metodo">Método de donación:</label>
+                    <select id="metodo" name="metodo" required>
+                        <option value="">Seleccione un método</option>
+                        <option value="transferencia">Transferencia</option>
+                        <option value="tarjeta">Tarjeta</option>
+                        <option value="efectivo">Efectivo</option>
+                    </select>
+                </div>
+
+                
+                <button type="submit" class="btn-donar">Donar ahora</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Fundación Patitas Felices. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
